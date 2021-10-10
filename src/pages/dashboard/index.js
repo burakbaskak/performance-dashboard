@@ -53,7 +53,7 @@ const renderLineChart = (data = []) => {
 
 function Dashboard() {
   const { data } = api.useAnalyticsQuery(null, {
-    pollingInterval: 3000,
+    pollingInterval: 2000,
   });
 
   return <Box>{renderLineChart(data)}</Box>;
